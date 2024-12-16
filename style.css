@@ -6,19 +6,29 @@
 
 header {
     padding: 16px 0;
-    background-color: #182c61;
-    color: #ecf0f1;
+    color: #111111;
 }
 
 body, input, textarea {
-    font-family: "Roboto", serif;
+    font-family: Arial, Helvetica, sans-serif, serif;
 }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('https://theimpression.com/wp-content/uploads/2020/01/Jil-Sander-spring-2020-ad-campaign-the-impression-header-scaled.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
 
 header,
 section h2,
 section h3,
 form button {
-    font-family: "Bungee", sans-serif;
+    font-family: "Roboto", serif;
     font-weight: normal;
 }
 
@@ -29,7 +39,7 @@ header nav li {
 }
 
 header nav li a {
-    color: #ecf0f1;
+    color: #111111;
     text-decoration: none;
     font-size: 18px;
 }
@@ -64,12 +74,19 @@ section {
     padding: 24px 0;
 }
 
+h1 {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    position: 0;
+}
+
 section h2 {
     margin-bottom: 16px;
 }
 
 section {
-    color: #182c61;
+    color: #111111;
 }
 
 section p {
@@ -121,22 +138,28 @@ section h3 {
 }
 
 form button {
-    background-color: #182c61;
-    color: #ecf0f1;
+    background-color: #efefef;
+    color: #111111;
     border: none;
     cursor: pointer;
 }
 
 form button:hover {
-    background-color: #314e9e;
+    background-color: #efefef;
 }
 
 input:focus, textarea:focus {
-    outline-color: #182c61;
+    outline-color: #efefef;
 }
 
 footer {
-    background-color: #182c61;
-    color: #ecf0f1;
+        color: #111111;
     padding: 16px 0;
+}
+
+footer .container {
+    margin-top: auto; /* Garante que o footer fique no final da página */
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
 }
